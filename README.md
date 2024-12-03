@@ -7,7 +7,7 @@ Install the latest version of [Report Generator](https://www.nuget.org/packages/
 To use this action in your GitHub repository, you can follow these steps:
 
 ```yaml
-uses: maurosoft1973/dotnet-tool-install-reportgenerator@v1
+uses: maurosoft1973/gha-dotnet-tool-install-reportgenerator@v1
 ```
 
 ### Inputs
@@ -29,7 +29,7 @@ This action has no outputs.
 ```yaml
 steps:
   - name: Install Report Generator
-    uses: maurosoft1973/dotnet-tool-install-reportgenerator@v1
+    uses: maurosoft1973/gha-dotnet-tool-install-reportgenerator@v1
 ```
 
 ## Contributing to Install .NET Tool - Report Generator
