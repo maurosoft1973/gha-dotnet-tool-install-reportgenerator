@@ -1,0 +1,15 @@
+name: Install .NET Tool - Report Generator
+description: Install the latest version of ReportGenerator using dotnet tool.
+inputs:
+  version:
+    description: The version of ReportGenerator to install.
+    required: false
+    default: 5.4.1
+runs:
+  using: composite
+  steps:
+  - run: dotnet tool update --global dotnet-reportgenerator-globaltool --version ${{ inputs.version }}
+    shell: bash
+branding:
+  icon: 'umbrella'
+  color: 'blue'
